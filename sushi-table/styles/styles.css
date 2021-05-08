@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  margin: 30px auto;
+  /* Pattern from https://www.magicpattern.design/tools/css-backgrounds/ */
+  background-image: linear-gradient(135deg, #c49393 25%, transparent 25%),
+    linear-gradient(225deg, #c49393 25%, transparent 25%),
+    linear-gradient(45deg, #c49393 25%, transparent 25%),
+    linear-gradient(315deg, #c49393 25%, #e5e5f7 20%);
+  background-position: 20px 0, 20px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+.container {
+  display: grid;
+  padding: 20px 10px;
+  border-radius: 10%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: rgb(206, 205, 205);
+  width: 90%;
+  height: 50%;
+  border: 5px solid #a58357;
+  box-shadow: 5px 7px 15px 5px #775d3b;
+}
+
+.roll,
+.cube {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 25px;
+  width: 75%;
+  height: 75%;
+}
+
+.roll {
+  border-radius: 50%;
+  border: 5px solid #014e01;
+}
+
+.roll1 {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.roll2,
+.cube1 {
+  grid-column-start: 3;
+  grid-column-end: span 2;
+}
+
+.roll3,
+.cube2 {
+  grid-column-start: 5;
+  grid-column-end: span 2;
+}
+
+.roll-center {
+  background: radial-gradient(
+        circle at 0% 50%,
+        rgba(96, 16, 48, 0) 9px,
+        #b4b2b3 10px,
+        rgba(96, 16, 48, 0) 11px
+      )
+      0px 10px,
+    radial-gradient(
+      at 100% 100%,
+      rgba(96, 16, 48, 0) 9px,
+      #b4b2b3 10px,
+      rgba(96, 16, 48, 0) 11px
+    ),
+    #eee48a;
+  background-size: 20px 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc377;
+  width: 45%;
+  height: 45%;
+}
+
+.cube {
+  border: 5px solid #adad00;
+  border-radius: 30px;
+}
+
+.sauce {
+  background-color: #3f2908;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 30px 5px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}

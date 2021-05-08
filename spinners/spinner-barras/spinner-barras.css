@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.spinner {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  width: 50px;
+  height: 30px;
+  border: 1px solid #2a36a5;
+  border-radius: 5px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.spinner div {
+  background: rgba(42, 54, 165, 0.4);
+  width: 20%;
+  height: 75%;
+  animation: changeBgcolor 1s linear infinite;
+}
+
+.spinner div:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.spinner div:nth-child(2) {
+  animation-delay: 0.75s;
+}
+
+@keyframes changeBgcolor {
+  0% {
+    background-color: rgba(42, 54, 165, 0.8);
+  }
+  50% {
+    background-color: rgb(42, 54, 165);
+    transform: rotateX(180deg);
+  }
+}
