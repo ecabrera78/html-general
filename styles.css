@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 6rem;
+  color: #FFF;
+  border-bottom: 4px solid gray;
+  background: linear-gradient(to top, #373737, #212121);
+  height: 20%;
+  text-align: center;
+  line-height: 12rem;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.projects__list {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.projects__list-item {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  width: 25rem;
+}
+
+.projects__list-item a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.projects__list-item a:hover {
+  color:black;
+}
+
+.projects__list-item:first-child {
+  background: orange;
+}
+
+.projects__list-item:nth-child(2) {
+  background: green;
+}
+
+.projects__list-item:nth-child(3) {
+  background: #1010a5;
+  color:white
+}
+
+.projects__list-item:nth-child(4) {
+  background: #dbdb1d;
+  color:white
+}
+
+.projects__list-item:last-child {
+  background: #ca3131;
+  color:white
+}
