@@ -76,6 +76,11 @@ body {
   color:white
 }
 
+.projects__list-item:nth-child(5) {
+  background: #1ddb9c;
+  color:white
+}
+
 .projects__list-item:last-child {
   background: #ca3131;
   color:white
