@@ -7,5 +7,6 @@
 }
 
 .plans-container__slider {
+  overflow: hidden;
   justify-content: center;
 }
